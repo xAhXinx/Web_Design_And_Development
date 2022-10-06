@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/*
+   Assignment
+
+   Author: CH'NG WEE XIAN
+   Date:   16.9.2021
+
+   Filename: Policy.css
+
+*/
+
+header {
+    background-color:darkslategray;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+header > h1 {
+    color: White;
+    font-size: 33px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 290px;
+}
+
+.section {
+    background-color: gainsboro;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section {
+    color:hsl(240, 0%, 30%);
+    margin-top: 30px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+section a {
+    color: hsl(240, 60%, 50%);
+}
+
+section a:hover {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+footer {
+    background-color:darkslategray;
+    padding: 20px;
+}
+
+.container {
+    color: White;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 280px;
+}

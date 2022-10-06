@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*
+   Assignment
+   
+   Author: CHEE KEAN LOK
+   Date:   10.8.2021
+   
+   Filename: Product.css
+
+*/
+
+/* Page Body Styles */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background: linear-gradient(rgb(16, 185, 129),rgb(0, 16, 163));
+    overflow-y: hidden;
+    color: rgb(43, 226, 113);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+ /* Images Styles */
+.productImg {
+    margin: 30px 30px 30px 0;
+    width: 65%;
+    height: 100%;
+    margin-left: 20%;
+    background-size: cover;
+    box-shadow: 0 0 50px 30px rgba(218, 218, 218, 0.911);
+}
+
+.default{
+   cursor: default;
+}
+
+ /* Text Styles */
+.container{
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.upper-centered{
+  position: absolute;
+  top: 10%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+
+
+.centered {
+    position: absolute;
+    top: 63%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centered-right{
+    position: absolute;
+    top: 72%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bottom{
+    position: absolute;
+    top: 92%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+  }

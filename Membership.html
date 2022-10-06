@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is my login form reference
+https://www.youtube.com/watch?v=L5WWrGMsnpw&list=LL&index=18 
+
+
+   Assignment
+   
+   Author: CHEE KEAN LOK
+   Date:   22.7.2021
+   
+   Filename: Membership.html
+
+--->
+
+    <head>
+        <title>Membership</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="All.css">
+        <link rel="stylesheet" href="Membership.css">
+        <script src="Membership.js"></script>
+        
+       
+    </head>
+
+    <body>
+        <a href="HomePage.html"class="logo">Toppee</a>
+        <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="HomePage.html">
+                        <span class="nav-text">
+                            Home
+                        </span>
+                        <i><img src="img/homeIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="AboutUs.html">
+                        <span>
+                            About Us
+                        </span>
+                        <i><img src="img/aboutUsIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="policy.html">
+                        <span>
+                            Privacy Policy
+                        </span>
+                        <i><img src="img/policyIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Store.html">
+                        <span>
+                            Store
+                        </span>
+                        <i><img src="img/storeIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Product.html">
+                        <span>
+                            Product
+                        </span>
+                        <i><img src="img/productIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="tutorial.html">
+                        <span>
+                            Tutorial
+                        </span>
+                        <i><img src="img/tutorialIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="CustomerFeedback.html">
+                        <span>
+                            Customer Feedback
+                        </span>
+                        <i><img src="img/customerFeedbackIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="FAQ.html">
+                        <span>
+                            FAQ
+                        </span>
+                        <i><img src="img/FAQIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="ContactUs.html">
+                        <span>
+                            Contact Us
+                        </span>
+                        <i><img src="img/contactUsIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                   <a href="Membership.html">
+                        <span>
+                            Membership
+                        </span>
+                        <i><img src="img/membershipIcon.png" alt=""></i>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+
+        
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register </button>
+        </div>
+    
+
+        <div class="social-icons" >
+            <a href="https://touch.facebook.com/?_rdr" target="blank"><img src="img/fb1.png"></a>
+            <a href="https://twitter.com/login" target="blank"><img src="img/tw.png"></a>
+            <a href="https://accounts.google.com/AddSession/identifier?hl=en&continue=https%3A%2F%2Fwww.google.com%2F_%2Fchrome%2Fnewtab%3Fei%3DAlALYbX8PMGmmAXa5rSgDQ%26rlz%3D1C1NHXL_enMY726MY726&ec=GAlA8wE&flowName=GlifWebSignIn&flowEntry=AddSession" target="blank"><img src="img/gp.png"></a>
+
+        </div>
+
+    <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" id="user" required>
+        <input type="password" class="input-field" placeholder="Enter password" id="password1" required >
+        <div class="value-checked">
+            <input type="checkbox" class="check-box" name="password" onclick="userPassword1()">
+            <label for="password">Show password</label><br>
+            <input type="checkbox" class="check-box" name="password2">
+            <label for="password2">Remember Password</label><br>
+        </div>
+        <button type="submit" class="submit-btn" onclick="valueLogin()">Log in</button> 
+    </form>
+
+    <form id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" id="user2" required>
+        <input type="email" class="input-field" placeholder="Email Id" id="mail" required>
+        <input type="password" class="input-field" placeholder="Enter password" id="password2" required>
+        <input type="tel" class="input-field" placeholder="012-345-6789" id="phone" pattern="[0]{0-9}-[0-9]-[0-9]" required>
+        <div class="input-box">
+        <input type="radio" name="gender" id="g1" class="radio" required>
+        <label for = "g1">Male</label>
+        <input type="radio" name="gender" id="g2" class="radio" required >
+        <label for = "g2">Female</label>
+        </div>
+        <div class="value-checked">
+            <input type="checkbox" class="check-box" name="password" onclick="userPassword2()">
+            <label for="password">Show password</label><br>
+            <input type="checkbox" class="check-box" name="agreement" required> 
+            <label for="agreement">I agree to <a href="terms-and-conditions-template.pdf" target="_blank" class="termsAndConditions">the terms and conditions</a></label><br>
+            
+        </div>
+        <button type="submit" class="submit-btn"  onclick="regist()">Register</button>
+    </form>
+
+    </div>
+</body>
+</html>

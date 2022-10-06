@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/*
+   Assignment
+
+   Author: CH'NG WEE XIAN
+   Date:   22.7.2021
+
+   Filename: AboutUs.css
+
+*/
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+    font-weight: 750;
+    position: relative;
+}
+
+.container {
+    background: rgba(157, 157, 157, 0.5);
+    border-radius: 10px;
+    margin-left: 250px;
+    margin-right: 250px
+}
+
+/* Our story */
+h3 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 27px;
+    font-weight: 200;
+    max-width: 350px;
+    position: relative;
+}
+
+h3:before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: white;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+h3:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: white;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.story {
+    font-family: sans-serif;
+    color: white;
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: justify;
+}
+
+/* Toppee */
+
+.website {
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 27px;
+    font-weight: 200;
+    max-width: 280px;
+    position: relative;
+}
+
+.website:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2.5px;
+    background: white;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.website:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2.5px;
+    background: white;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.toppee {
+    font-family: sans-serif;
+    color: white;
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: justify;
+}
+
+.toppee > b {
+    color:hsl(240, 0%, 10%);
+}
+
+/* Our mission */
+
+.mission {
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 27px;
+    font-weight: 200;
+    max-width: 350px;
+    position: relative;
+}
+
+.mission:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2.5px;
+    background: white;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.mission:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2.5px;
+    background: white;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.goals {
+    font-family: sans-serif;
+    color: white;
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: justify;
+}
+
+.goals > a {
+    font-weight: bold;
+    color:turquoise;
+}
+
+.goals > a:hover {
+    color:yellowgreen;
+    text-decoration: underline;
+}

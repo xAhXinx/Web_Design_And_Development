@@ -1,0 +1,159 @@
+<!----
+   Assignment
+
+   Author: WILLIAM LEE VOON LEIM
+   Date:   27.7.2021
+
+   Filename: ContactUs.html
+
+    --->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us</title>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link href="reset.css" rel="stylesheet">
+        <link href="All.css" rel="stylesheet">
+        <link href="contactus.css" rel="stylesheet">
+        <script src="contactus.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="HomePage.html">
+                        <span class="nav-text">
+                            Home
+                        </span>
+                        <i><img src="img/homeIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="AboutUs.html">
+                        <span>
+                            About Us
+                        </span>
+                        <i><img src="img/aboutUsIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="policy.html">
+                        <span>
+                            Policy
+                        </span>
+                        <i><img src="img/policyIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Store.html">
+                        <span>
+                            Store
+                        </span>
+                        <i><img src="img/storeIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Product.html">
+                        <span>
+                            Product
+                        </span>
+                        <i><img src="img/productIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="tutorial.html">
+                        <span>
+                            Tutorial
+                        </span>
+                        <i><img src="img/tutorialIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="CustomerFeedback.html">
+                        <span>
+                            Customer Feedback
+                        </span>
+                        <i><img src="img/customerFeedbackIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="FAQ.html">
+                        <span>
+                            FAQ
+                        </span>
+                        <i><img src="img/FAQIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="ContactUs.html">
+                        <span>
+                            Contact Us
+                        </span>
+                        <i><img src="img/contactUsIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                   <a href="Membership.html">
+                        <span>
+                            Membership
+                        </span>
+                        <i><img src="img/membershipIcon.png" alt=""></i>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+        <a href="HomePage.html"class="logo">Toppee</a>
+
+        <div class="container">
+            <h1>Got any problem? Contact us at here !</h1>
+            <div class="contact-box">
+
+                <div class="left-side">
+                    <h4>DETAILS</h4>
+                    <table>
+                        <tr>
+                            <td>Phone: </td>
+                            <td> <a class="detail" href="tel:0142512829">0142512829</a></td>                            
+                        </tr>
+                        <tr>
+                            <td>Email: </td>
+                            <td> <a class="detail" href="mailto:contactus@example.com">contactus@example.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>Desa Complex, Lot G09, LEVEL G, Jln Besar Kepong, Pekan Kepong, 52100 Kuala Lumpur</td>
+                        </tr>
+                    </table>
+                </div>
+        
+                <div class="right-side">  
+                        
+                    <h4>REQUEST</h4>
+                    <div id="error_message"></div>    
+
+                        <form onsubmit="return validation()">
+                            <div class="control">
+                                <div class="input-group">
+                                <label for="name">Name : </label>
+                                    <input type="text" name="name" placeholder="Your Name" id="name">
+                                </div>
+                                <br><br>
+
+                                <div class="input-group">
+                                <label for="email" >Email address : </label>
+                                    <input type="email" name="email" placeholder="contactus@example.com" id="email">
+                                </div>
+                                <br><br>
+                            </div>
+                
+                            <label for="message">Message : </label>
+                                <textarea row="5" type="text" text="enquiry" placeholder="Your Message" id="message"></textarea>                                        
+                                <button type="submit">SEND</button>
+                        </form>
+                </div>
+            </div>   
+        </div>
+    </body>
+</html>

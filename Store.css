@@ -1,0 +1,450 @@
+/*
+   Assignment
+
+   Author: YEUNG KIEN XIN
+   Date:   22.7.2021
+
+   Filename: Store.css
+
+*/
+
+body {
+    overflow: hidden;
+}
+/* Page */
+#shop {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+#cart {
+    z-index: 2;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    top: 0;
+    right: -50%;
+    overflow-y: scroll;
+    transition: 1s;
+    background: linear-gradient(to left, rgba(0, 4, 255, 0.959), rgba(255, 0, 0, 0.925));
+    box-shadow: 0 0 10px 10px rgba(255, 0, 0, 0.849);
+}
+
+/* main-content */
+.main-content{
+    margin-left: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Cart Button */
+.cartButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+}
+
+.cartButton > a {
+    border-bottom-left-radius: 40px;
+}
+
+.cartButton > a > img {
+    width: 50px;
+    border-bottom-left-radius: 40px;
+}
+
+/* Button box */
+.buttonBox {
+    overflow: hidden;
+}
+
+.buttonBox > div {
+    width: 440px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    box-shadow:0 0 30px 6px #ff00f27a;
+    background: linear-gradient(to right,#ff006a96,#6f00ff8e);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.buttonBox > div:hover {
+    box-shadow:0 0 30px 10px #ff00f28f;
+}
+
+.toggleBtn {
+    width: 110px;
+    padding: 10px 0;
+    overflow: hidden;
+    float: left;
+}
+
+.toggleBtn > a {
+    width: 100%;
+    position: relative;
+    color: rgba(255, 255, 255, 0.726);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #d310c998;
+    border-radius: 30px;
+    transition: .6s;
+}
+
+/* previousBtn and nextBtn */
+.previousBtn {
+    height: 80%;
+    width: 18%;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.nextBtn {
+    height: 80%;
+    width: 15%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.previousBtn > a {
+    right: 0;
+    top: 30%;
+    color: white;
+    background: violet;
+    border-radius: 200px;
+    border: solid;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nextBtn > a {
+    left: 0;
+    top: 30%;
+    color: white;
+    background: violet;
+    border-radius: 200px;
+    border: solid;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.previousBtn > a:active {
+    right: 2%;
+    color: rgb(204, 204, 204);
+    background: rgb(179, 97, 179);
+}
+
+.nextBtn > a:active {
+    left: 2%;
+    color: rgb(204, 204, 204);
+    background: rgb(179, 97, 179);
+}
+
+.previousBtn > div{
+    display: block;
+    position: relative;
+    width: max-content;
+    padding: auto;
+}
+
+.nextBtn > div{
+    display: block;
+    position: relative;
+    width: max-content;
+    padding: auto;
+}
+
+/* Shop Item */
+#desktop, #laptop, #mobile, #tablet {
+    width: 1000%;
+    overflow: visible;
+    top: 25%;
+    position: absolute;
+    transition: 1s;
+}
+
+.shop-item {
+    border-radius: 30px;
+    width: 10%;
+    float: left;
+}
+
+.shop-item-image {
+    float: left;
+}
+
+#desktop > div > .shop-item-image {
+    padding-bottom: 25%;
+    width: 25%;
+    padding-left: 24%;
+    padding-right: 6%;
+}
+
+#laptop > div > .shop-item-image {
+    padding-bottom: 23%;
+    padding-top: 1%;
+    width: 26%;
+    padding-left: 24%;
+    padding-right: 5%;
+}
+
+#mobile > div > .shop-item-image {
+    padding-bottom: 26%;
+    padding-top: 12%;
+    width: 12%;
+    padding-left: 31%;
+    padding-right: 12%;
+}
+
+#tablet > div > .shop-item-image {
+    padding-bottom: 26%;
+    padding-top: 7%;
+    width: 17%;
+    padding-left: 29%;
+    padding-right: 9%;
+}
+
+.shop-item-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    margin: 10px 0;
+    border-radius: 30px;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    width: 30%;
+    display: block;
+    overflow: hidden;
+    bottom: 50%;
+}
+
+@keyframes example {
+    0% {
+        opacity: 80%;
+        background: #9dc8ee;
+        box-shadow: 0 0 10px 5px #bbd7f0;
+    }
+    50% {
+        opacity: 90%;
+        background: #bbd7f0;
+        box-shadow: 0 0 10px 10px#bbd7f0;
+    }
+    100% {
+        opacity: 80%;
+        background: #99c5eb;
+        box-shadow: 0 0 10px 5px #bbd7f0;
+    }
+}
+
+.shop-item-details {
+    width: 30%;
+    float: left;
+    margin: auto;
+    display: block;
+}
+
+.shop-item-details > a {
+    float: right;
+    color: white;
+}
+
+.shop-item-details > a:hover { 
+    text-decoration: underline;
+}
+
+.shop-item-price {
+    font-size: 60px;
+    padding-top: 60px;
+    width: max-content;
+    color: #bbd7f0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.shop-item-button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #bbd7f0;
+    background-color: #1E56A0;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px #bbd7f0;
+    display: block;
+    bottom: 0;
+    float: left;
+}
+
+.shop-item-button:hover {
+    background-color: #1E56A0;
+}
+
+.shop-item-button:active {
+    background-color: #1E56A0;
+    box-shadow: 0 5px #256cc9;
+    transform: translateY(4px);
+}
+
+/* Cart */
+.btn-x > button {
+    border-bottom: solid black;
+    display: block;
+    float: left;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #353535;
+    color: white;
+}
+
+.btn-danger {
+    border-bottom: solid black;
+    display: block;
+    border-radius: 50px;
+    background-color: #1E56A0;
+    color: #d1d5da;
+}
+
+.cart-row {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    border-bottom: solid black;
+}
+
+.cart-header {
+    border-bottom: 5px solid black;
+    overflow: hidden;
+}
+
+.cart-header h3 {
+    text-align: center;
+    margin: 10px;
+   color: #bbd7f0; 
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.cart-items {
+    min-height: 73%;
+    height: max-content;
+}
+
+.cart-content{
+    width: 100%;
+    display: inline-block;
+    clear: both;
+}
+
+.cart-item {
+    width: 33%;
+    height: max-content;
+    float: left;
+    overflow: hidden;
+}
+
+.cart-item-image {
+    border-radius: 10px 10px 0 0;
+    border-radius: 30px;
+    width: 100%;
+    margin: auto;
+}
+
+.cart-item-title {
+    height: 80px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    float: left;
+    color: #d1d5da;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cart-price {
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding-top: 100px;
+    color: #d1d5da;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cart-price span {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.cart-quantity {
+    width: 33%;
+    float: left;
+    padding-top: 100px;
+}
+
+.cart-quantity-input {
+    border-radius: 10px 10px 10px 10px;
+    background-color: #1E56A0;
+    box-shadow: 0 0 10px 3px #256cc9;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #d1d5da;
+}
+
+.cart-total {
+    text-align: center;
+    width: 100%;
+    color: #9fb5c9;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-top: 5px solid black;
+}
+
+.btn-confirm {
+    margin: auto;
+    width: max-content;
+}
+
+.btn-confirm a {
+    border: solid rgb(150, 112, 221);
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(150, 112, 221);
+    color: #bbd7f0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

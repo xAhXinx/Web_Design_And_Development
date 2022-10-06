@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<!----
+   Assignment
+   
+   Author: YEUNG KIEN XIN
+   Date:   22.7.2021
+   
+   Filename: Store.html
+--->
+
+<html>
+    <head>
+        <title>Product</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="All.css">
+        <link rel="stylesheet" href="Store.css">
+    </head>
+    <body>
+        <div id="shop">
+            <nav class="main-menu">
+                <ul>
+                    <li>
+                        <a href="HomePage.html">
+                            <span class="nav-text">
+                                Home
+                            </span>
+                            <i><img src="img/homeIcon.png" alt=""></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="AboutUs.html">
+                            <span>
+                                About Us
+                            </span>
+                            <i><img src="img/aboutUsIcon.png" alt=""></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="policy.html">
+                            <span>
+                                Privacy Policy
+                            </span>
+                            <i><img src="img/policyIcon.png" alt=""></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Store.html">
+                            <span>
+                                Store
+                            </span>
+                            <i><img src="img/storeIcon.png" alt=""></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Product.html">
+                            <span>
+                                Product
+                            </span>
+                            <i><img src="img/productIcon.png" alt=""></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tutorial.html">
+                            <span>
+                                Tutorial
+                            </span>
+                            <i><img src="img/tutorialIcon.png" alt=""></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="CustomerFeedback.html">
+                            <span>
+                                Customer Feedback
+                            </span>
+                            <i><img src="img/customerFeedbackIcon.png" alt=""></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="FAQ.html">
+                            <span>
+                                FAQ
+                            </span>
+                            <i><img src="img/FAQIcon.png" alt=""></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ContactUs.html">
+                            <span>
+                                Contact Us
+                            </span>
+                            <i><img src="img/contactUsIcon.png" alt=""></i>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="Membership.html">
+                            <span>
+                                Membership
+                            </span>
+                            <i><img src="img/membershipIcon.png" alt=""></i>
+                        </a>
+                    </li>  
+                </ul>
+            </nav>
+            <a href="HomePage.html"class="logo">Toppee</a>
+
+            <div class="cartButton">
+                <a href="#" onclick="displayCartButton(1)"><img src="img/cart.png" alt=""></a>
+            </div>
+
+            <div class="buttonBox">
+                <div>
+                    <div id="btn"></div>
+                    <div class="toggleBtn"><a href="#" onclick="displayProucdtButton(1)">Desktop</a></div>
+                    <div class="toggleBtn"><a href="#" onclick="displayProucdtButton(2)">Laptop</a></div>
+                    <div class="toggleBtn"><a href="#" onclick="displayProucdtButton(3)">Mobile</a></div>
+                    <div class="toggleBtn"><a href="#" onclick="displayProucdtButton(4)">Tablet</a></div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="previousBtn"><a href="#" onclick="displayPageProucdtButton(1)"><div style='font-size:400%'>&lt;</div></a></div>
+                <div class="nextBtn"><a href="#" onclick="displayPageProucdtButton(2)"><div style='font-size:400%;'>&gt;</div></a></div>
+                <div id="desktop" style="left: 0;">
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Apple_iMac_24-Inch.png">
+                        <span class="shop-item-title">Apple iMac 24-Inch</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM6099.00</span>
+                            <a href="Desktop.html#Apple_iMac_24-Inch" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Lenovo_ThinkCentre_M80t.png">
+                        <span class="shop-item-title">Lenovo ThinkCentre M80t</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM2399.00</span>
+                            <a href="Desktop.html#Lenovo_ThinkCentre_M80t" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Asus_S500SA.png">
+                        <span class="shop-item-title">Asus S500SA</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM1899.00</span>
+                            <a href="Desktop.html#Asus_S500SA" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Acer_Aspire_XC_Seires.png">
+                        <span class="shop-item-title">Acer Aspire XC Seires</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM2499.00</span>
+                            <a href="Desktop.html#Acer_Aspire_XC_Seires" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Dell_Inspiron_Compact_Desktop.png">
+                        <span class="shop-item-title">Dell Inspiron Compact Desktop</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM2499.00</span>
+                            <a href="Desktop.html#Dell_Inspiron_Compact_Desktop" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/HP_ProDesk_400_G7.png">
+                        <span class="shop-item-title">HP ProDesk 400 G7</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM2999.00</span>
+                            <a href="Desktop.html#HP_ProDesk_400_G7" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="laptop" style="display: none; left: 0;">
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Lenove_Legion_5.png">
+                        <span class="shop-item-title">Lenove Legion 5</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM7199.00</span>
+                            <a href="Laptop.html#Lenove_Legion_5" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Lenovo_IdeaPad_5_Pro.png">
+                        <span class="shop-item-title">Lenovo IdeaPad 5 Pro</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM3699.00</span>
+                            <a href="Laptop.html#Lenovo_IdeaPad_5_Pro" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Asus_TUF_Dash_F15.png">
+                        <span class="shop-item-title">Asus TUF Dash F15</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM5499.00</span>
+                            <a href="Laptop.html#Asus_TUF_Dash_F15" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Asus_ROG_Strix_G15.png">
+                        <span class="shop-item-title">Asus ROG Strix G15</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM4499.00</span>
+                            <a href="Laptop.html#Asus_ROG_Strix_G15" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Acer_Nitro_5.png">
+                        <span class="shop-item-title">Acer Nitro 5</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM4199.00</span>
+                            <a href="Laptop.html#Acer_Nitro_5" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Acer_Swift_3X.png">
+                        <span class="shop-item-title">Acer Swift 3X</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM3099.00</span>
+                            <a href="Laptop.html#Acer_Swift_3X" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="mobile" style="display: none; left: 0;">
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Xiaomi_Poco_F3.png">
+                        <span class="shop-item-title">Xiaomi Poco F3</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM1399.00</span>
+                            <a href="Mobile.html#Xiaomi_Poco_F3" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Vivo_iQOO_Neo_5.png">
+                        <span class="shop-item-title">Vivo iQOO Neo 5</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM1899.00</span>
+                            <a href="Mobile.html#Vivo_iQOO_Neo_5" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Oppo_Realme_GT.png">
+                        <span class="shop-item-title">Oppo Realme GT</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM1799.00</span>
+                            <a href="Mobile.html#Oppo_Realme_GT" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Xiaomi_Mi_11_Pro.png">
+                        <span class="shop-item-title">Xiaomi Mi 11 Pro</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM3999.00</span>
+                            <a href="Mobile.html#Xiaomi_Mi_11_Pro" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Vivo_iQOO_8_Pro.png">
+                        <span class="shop-item-title">Vivo iQOO 8 Pro</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM5499.00</span>
+                            <a href="Mobile.html#Vivo_iQOO_8_Pro" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Oppo_Find_X3_Pro_5G.png">
+                        <span class="shop-item-title">Oppo Find X3 Pro 5G</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM4199.00</span>
+                            <a href="Mobile.html#Oppo_Find_X3_Pro_5G" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tablet" style="display: none; left: 0;">
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Apple_iPad_Pro_2021.png">
+                        <span class="shop-item-title">Apple iPad Pro 2021</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM4799.00</span>
+                            <a href="Tablet.html#Apple_iPad_Pro_2021" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Apple_iPad_2020.png">
+                        <span class="shop-item-title">Apple iPad 2020</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM1499.00</span>
+                            <a href="Tablet.html#Apple_iPad_2020" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Xiaomi_Mi_Pad_5_Pro.png">
+                        <span class="shop-item-title">Xiaomi Mi Pad 5 Pro</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM2099.00</span>
+                            <a href="Tablet.html#Xiaomi_Mi_Pad_5_Pro" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Samsung_Galaxy_Tab_S7.png">
+                        <span class="shop-item-title">Samsung Galaxy Tab S7</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM2599.00</span>
+                            <a href="Tablet.html#Samsung_Galaxy_Tab_S7" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Huawei_MatePad_11.png">
+                        <span class="shop-item-title">Huawei MatePad 11</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM1799.00</span>
+                            <a href="Tablet.html#Huawei_MatePad_11" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="img/store/Lenovo_Pad_Pro.png">
+                        <span class="shop-item-title">Lenovo Pad Pro</span>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">RM2099.00</span>
+                            <a href="Tablet.html#Lenovo_Pad_Pro" target="_blank">-Explore More-</a>
+                            <button class="shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cart">
+            <div class="newRow btn-x"><button onclick="displayCartButton(0)">X</button></div>
+            <div class="newRow cart-header">
+                <div class="col-1-3"><h3>ITEM</h3></div>
+                <div class="col-1-3"><h3>PRICE</h3></div>
+                <div class="col-1-3"><h3>QUANTITY</h3></div>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="newRow">
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total : </strong>
+                    <span class="cart-total-price">RM0</span>
+                </div>
+            </div>
+            <div class="newRow">
+                <div class="btn-confirm"><a href="#">CONFIRM</a></div>
+            </div>
+        </div>
+        <script src="Store.js" async></script>
+    </body>
+</html>

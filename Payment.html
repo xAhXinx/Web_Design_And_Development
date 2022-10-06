@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is my payment form reference
+https://www.youtube.com/watch?v=01NiC8f9phQ&list=LL&index=20&t=5s 
+
+
+   Assignment
+   
+   Author: CHEE KEAN LOK
+   Date:   26.7.2021
+   
+   Filename: Payment.html
+
+    -->
+
+    <head>
+        <title>Payment</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="All.css">
+        <link href="Payment.css" rel="stylesheet">
+        <script src="Payment.js"></script>
+
+       
+    </head>
+    <body>
+        <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="HomePage.html">
+                        <span class="nav-text">
+                            Home
+                        </span>
+                        <i><img src="img/homeIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="AboutUs.html">
+                        <span>
+                            About Us
+                        </span>
+                        <i><img src="img/aboutUsIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="policy.html">
+                        <span>
+                            Privacy Policy
+                        </span>
+                        <i><img src="img/policyIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Store.html">
+                        <span>
+                            Store
+                        </span>
+                        <i><img src="img/storeIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Product.html">
+                        <span>
+                            Product
+                        </span>
+                        <i><img src="img/productIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="tutorial.html">
+                        <span>
+                            Tutorial
+                        </span>
+                        <i><img src="img/tutorialIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="CustomerFeedback.html">
+                        <span>
+                            Customer Feedback
+                        </span>
+                        <i><img src="img/customerFeedbackIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="FAQ.html">
+                        <span>
+                            FAQ
+                        </span>
+                        <i><img src="img/FAQIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="ContactUs.html">
+                        <span>
+                            Contact Us
+                        </span>
+                        <i><img src="img/contactUsIcon.png" alt=""></i>
+                    </a>
+                </li>
+                <li>
+                   <a href="Membership.html">
+                        <span>
+                            Membership
+                        </span>
+                        <i><img src="img/membershipIcon.png" alt=""></i>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+        <a href="HomePage.html"class="logo">Toppee</a>
+        
+        <div class="statement">
+            <h2>Payment Form</h2>
+            <form method="POST">
+                <h4>Account</h4>
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text"class="input-field" placeholder="Full Name" id="user" required>
+                        <img src="img/User.png" class="icon" >
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Nick Name" id="nick" required>
+                        <img src="img/User.png" class="icon" >
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="email" class="input-field" placeholder="Email Address" id="mail" required>
+                        <img src="img/Envelope.png" class="icon" >
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <h4>Date of Birth</h4>
+                        <input type="text" class="dob" placeholder="DD" >
+                        <input type="text" class="dob" placeholder="MM" >
+                        <input type="text" class="dob" placeholder="YYYY" >
+                    </div>
+
+                    <div class="input-box">
+                        <h4>Gender</h4>
+                        <input type="radio" id="b1" name="gender" checked class="radio" required>
+                        <label for ="b1">Male</label>
+                        <input type="radio" id="b2" name="gender" class="radio" required>
+                        <label for ="b2">Female</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <h4>Payment Details</h4>
+                        <input type="radio" name="pay" id="bc1" checked class="radio">
+                        <label for="bc1"><span><img src="img/credit card.JPG" class="card" >Credit Card</span></label>
+                        <input type="radio" name="pay" id="bc2" class="radio">
+                        <label for="bc2"><span><img src="img/Paypal.png" class="card" >Paypal</span></label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="tel" class="input-field" placeholder="Card number" id="number" pattern="[0-9]{16}" required>
+                        <img src="img/credit card.JPG" class="picture" >
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="tel" class="input-field" placeholder="Card CVC" id="cvc" pattern="[0-9]{3}" required>
+                    <img src="img/User.png" class="icon" >
+                    </div>
+                    
+
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <button type="submit" onclick="validate()">Pay Now</button>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+</body>
+</html>

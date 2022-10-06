@@ -1,0 +1,19 @@
+/*
+   Assignment
+
+   Author: YEUNG KIEN XIN
+   Date:   22.7.2021
+
+   Filename: reset.css
+
+*/
+
+body, header, div, ul, li, nav{
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}

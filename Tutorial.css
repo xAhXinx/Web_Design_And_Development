@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/*
+   Assignment
+   
+   Author: CHEE KEAN LOK
+   Date:   22.8.2021
+   
+   Filename: Tutorial.css
+
+*/
+
+
+/* Page Body Styles */
+body{
+
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    margin-left: 10%;
+    margin-right: 5%;
+    background: linear-gradient(#3a1772,#7597de);
+    color: #fff;
+
+}
+
+/* Header Styles */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left:55px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+
+}
+
+.link-box{
+position:fixed;
+}
+
+
+
+.link-box ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:right;
+    margin-left:600px
+
+    
+}
+
+.link-box ul li{
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+.link-box ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.link-box ul li a:hover,
+.link-box ul li a.a1{
+    background: #fff;
+    color:black;
+}
+
+/*  Font Size Styles */
+h3,h4,h5{
+    color: rgb(38, 233, 240);
+    font-weight: bold;
+    
+}
+
+
+/* Comment Box and Commets Styles */
+.comment-box{
+    position: relative;
+    width: 500px;
+
+}
+
+.comment-box h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.comment-box input{
+    width: 75%;
+    height: 30px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+    box-shadow: 0.5px;
+
+}
+
+.comment-box input:focus{
+    border: 1px solid black;
+    outline: 0;
+}
+
+.comment-box textarea{
+    width: 75%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+
+}
+
+.comment-box textarea:focus{
+    border: 1px solid black;
+    outline: 0;
+}
+
+.comment-box button{
+    border:0;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: saddlebrown;
+    color: #fff;
+}
+
+.comment-box button:hover{
+    background-color:rgba(7, 170, 182,0.7);
+}
+
+.comment{
+    width: 55%;
+    height: 125px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+
+.coment li{
+    list-style-position: outside;
+}
+/* List Styles */
+ul{
+    list-style-type: black circle;
+  }
+  
+ul > ol > li{
+    list-style-type:lower-alpha;
+}  
+
+/* Link Styles */
+.container2 a:link,
+.container2 a:visited{
+    color: rgb(60, 255, 0);
+
+}
+
+.container2 a:hover,
+.container2 a:active{
+     color: rgb(255, 123, 0);
+
+}
+
+
+
+
+ 

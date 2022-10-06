@@ -1,0 +1,114 @@
+/*
+Assignment
+   
+   Author: WILLIAM LEE VOON LEIM
+   Date:   27.7.2021
+   
+   Filename: CustomerFeedback.css
+*/
+/*REVIEW*/
+body{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    clear:both;
+    width: 90%;
+    margin: auto auto 5% auto;
+}
+h1{
+    text-align: end;
+    font-weight: bold;
+    font-size: 50px;
+    margin-right: 7%;
+    color:#bbd7f0;
+}
+.cate{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.review{
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0.575);
+    border: 5px solid rgb(192, 169, 169);
+    border-radius: 30px;
+}
+.product > a{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+    cursor:pointer;
+    color: White;
+}
+.comment{
+    font-size: 1rem;
+    color: #c5e1ee;
+}
+.btn{
+    width: 100px;
+    float:left;
+}
+.page > div{
+    width: 406px;
+    height: 30px;
+    margin: 2% auto auto auto;
+    position: relative;
+    background-color: #C490E4;
+    box-shadow: 0 0 30px 10px #C490E4;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.btn > a{
+    font-size: 1.1rem;
+    width: 100%;
+    color: #7952B3;
+    display: block;
+    text-align: center;
+}
+
+.btn > a:hover {
+    background-color: rgb(50, 164, 168);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.mySlides > img{
+    width:300px;
+    height:168px;
+}
+.slideshow-container {
+    margin:5% auto auto auto;
+    max-width: 300px;
+    position: relative;    
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+.fading {
+    animation-name: fading;
+    animation-duration: 1.5s;
+} 
+@keyframes fading {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}

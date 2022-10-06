@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/*
+   Assignment
+   
+   Author: CHEE KEAN LOK
+   Date:   22.8.2021
+   
+   Filename: Tutorial home page.css
+
+*/
+
+
+/* Page Body Styles */
+body{
+    color:#fff;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: rgb(6, 10, 41);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left:50px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+
+}
+
+
+
+.link-box ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:right;
+    margin-left:600px
+
+    
+}
+
+.link-box ul li{
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+.link-box ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+
+}
+
+.link-box ul li a:hover,
+.link-box ul li a.a1{
+    background: #fff;
+    color:black;
+}
+
+/* Section Styles */
+section img{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* Center Styles */
+.centered {
+    font-weight: 600;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* Container2 Styles */
+.container2 > h3,h4,p,li,iframe{
+    margin-left: 100px;
+}
+
+/* Link Styles */
+.container2 a:link,
+.container2 a:visited{
+    color: chartreuse;
+
+}
+
+.container2 a:hover,
+.container2 a:active{
+     color: rgb(255, 72, 0);
+
+}
+
+

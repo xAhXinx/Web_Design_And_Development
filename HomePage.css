@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/*
+   Assignment
+
+   Author: CH'NG WEE XIAN
+   Date:   22.7.2021
+
+   Filename: HomePage.css
+
+*/
+
+/* Asus TUF DASH 15 */
+.AsusTUF {
+    position: relative;
+    width: 50%;
+    margin-left: 158px;
+    margin-top: 100px;
+}
+
+.AsusDash {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility:hidden;
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.AsusTUF:hover .AsusDash {
+    opacity: 0.4;
+}
+  
+.AsusTUF:hover .middle {
+    opacity: 1;
+}
+  
+.product1 {
+    color: white;
+    font-size: 16px;
+    padding: 0px;
+    text-align: left;
+}
+
+/* Oppo Find X3 Pro 5G */
+.oppo {
+    position: absolute;
+    margin-left: 1050px;
+    margin-top: -503px;
+    margin-right: auto;
+}
+
+.oppofind {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    width: 330px;
+    height: auto;
+}
+
+.middle1 {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.oppo:hover .oppofind {
+    opacity: 0.4;
+}
+  
+.oppo:hover .middle1 {
+    opacity: 1;
+}
+
+.product2 {
+    color: white;
+    font-size: 13.5px;
+    padding: 0px;
+    text-align: left;
+    float: left;
+}
+
+/* Apple Ipad Pro */
+.tablet {
+    position: absolute;
+    margin-left: 158px;
+    margin-top: 100px;
+    margin-right: auto;
+}
+
+.ipad {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    width: 450px;
+    height: auto;
+}
+
+.middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tablet:hover .ipad {
+    opacity: 0.4;
+}
+  
+.tablet:hover .middle2 {
+    opacity: 1;
+}
+
+.product3 {
+    color: white;
+    font-size: 13px;
+    padding: 0px;
+    text-align: left;
+    float: left;
+}
+
+/* Imac */
+.desktop {
+    position: absolute;
+    margin-left: 719px;
+    margin-top: 100px;
+    margin-right: auto;
+}
+
+.imac {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    width: 700px;
+    height: auto;
+}
+
+.middle3 {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.desktop:hover .imac {
+    opacity: 0.4;
+}
+  
+.desktop:hover .middle3 {
+    opacity: 1;
+}
+
+.product4 {
+    color: white;
+    font-size: 16px;
+    padding: 0px;
+    text-align: left;
+    float: left;
+}
+
+/* Asus video */
+#Asus15 {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 75%;
+    border-radius: 7px;
+}
+
+#content {
+    top: 87.4%;
+    left: 49.99%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 73.45%;
+    padding: 12.05px;
+    padding-bottom: 45px;
+    border-radius: 7px;
+    font-family: sans-serif;
+}
+
+#content > h1 {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#playPauseBtn {
+    padding: 0;
+    margin: auto;
+    margin-left: 20px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    float: left;
+    position:absolute;
+}
+  
+#playPauseBtn:hover {
+    opacity: 0.5;
+}
+
+#playPauseImg {
+    width: 27px;
+}
+
+#muteUnmuteBtn {
+    right:0;
+    position: absolute;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+#muteUnmuteBtn:hover {
+    opacity: 0.5;
+}
+
+#muteUnmuteImg {
+    width: 30px;
+}
